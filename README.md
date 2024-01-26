@@ -37,3 +37,18 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+## My Time Complexity of Insertion Sort
+
+The best-case time complexity is $\Theta(n)$ because the best-case is a sorted array
+where the inner loop will never run, thus only the outer loop runs, and it runs $n$
+times. 
+
+The worst-case time complexity is $\Theta(n^2)$ because the worst-case is an array
+in reverse sorted order, which would require both loops to run the maximum number of times
+they can. 
+
+This means that an average case would be any array that isn't sorted in ascending, or descending
+order. Although in this situation the inner loop would definitely run fewer times than it 
+does in the worst-case scenario, it would still give us a runtime complexity of $\Theta(n^2)$. 
+
